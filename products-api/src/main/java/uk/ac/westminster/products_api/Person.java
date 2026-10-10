@@ -32,7 +32,7 @@ public class Person {
         this.name = name;
     }
 
-    // TODO (Activity 3): add the "email" field and its getter here.
+    // TODO (Activity 3): add the "email" field and its getter here.-COMPLETE
     private String email;
 
     public String getEmail(){

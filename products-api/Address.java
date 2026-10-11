@@ -19,5 +19,5 @@ public class Address {
     public String getCity() { return city; }
 
     public String getPostcode() { return postcode; }
-}
+} 
 }

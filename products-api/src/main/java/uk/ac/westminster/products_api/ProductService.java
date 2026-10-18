@@ -10,11 +10,11 @@ import java.util.Optional;
 @Service
 public class ProductService {
 
-    private final List<Product> products = new ArrayList<>();
+    private List<Product> products = new ArrayList<>();
     private Long nextId = 1L; // Client only sends name + price, never an id
 
     public List<Product> getAllProducts() {
-        return products;
+        return List.copyOf(products);//to manage the later acces through the productcontroller
     }
 
     public Product addProduct(Product product) {

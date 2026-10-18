@@ -1,15 +1,17 @@
+`````mermaid
+
 classDiagram
-class Product {
--Long id
--String name
--double price
-+getId() Long
-+getName() String
-+getPrice() double
-+setId(Long id) void
-+setName(String name) void
-+setPrice(double price) void
-}
+    class Product {
+        -Long id
+        -String name
+        -double price
+        +getId() Long
+        +getName() String
+        +getPrice() double
+        +setId(Long id) void
+        +setName(String name) void
+        +setPrice(double price) void
+    }
 
     class ProductService {
         -List~Product~ products
@@ -31,3 +33,4 @@ class Product {
 
     ProductController ..> ProductService
     ProductService --> Product
+`````
